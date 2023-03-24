@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f
+      uses: actions/checkout@cd6a9fd49371476d813e892956e2e920fcc3fb7e
     - name: Run markdown link checker
       uses: gaurav-nelson/github-action-markdown-link-check@0fe4911067fa322422f325b002d2038ba5602170
       with:
@@ -37,7 +37,7 @@ jobs:
         username: ${{ secrets.RO_DOCKERHUB_USER }}
         password: ${{ secrets.RO_DOCKERHUB_TOKEN }}
     - name: Checkout code
-      uses: actions/checkout@5a4ac9002d0be2fb38bd78e4b4dbde5606d7042f
+      uses: actions/checkout@cd6a9fd49371476d813e892956e2e920fcc3fb7e
     - name: Install cookie
       run: scripts/gogetcookie.sh
     - name: Run tests
